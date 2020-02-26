@@ -39,7 +39,6 @@ void main() {
   }
 
   print(sum(5, 10));
-
 //funcao pra saber a diferença entre valores
   var difference = (int a, int b) {
     return a - b;
@@ -50,26 +49,24 @@ void main() {
   var product = (int a, int b) => a * b;
   print(product(3, 3));
 
-  //Lists
+  //Lists ou arrays
   var fruits = ['banana', 'pineapple', 'lemon'];
   print(fruits.length);
-
   fruits.forEach((fruit) => print(fruit));
 
   var mappedFruits = fruits.map((fruit) => 'I love $fruit').toList();
   print(mappedFruits[1]);
 
-  //Maps
+  //Maps- > par chave e valor, as chaves podem ser acessadas usando o array
   var user = {"name": "Silvana", "age": 30, "isSubscriber": true};
   print(user["name"]);
-
   user.forEach((key, value) => print("key: $key, value: $value"));
 
-  //Runes
+  //Runes -> expressar caracteres unicode em uma string
   Runes input = new Runes('I \u2764 Dart');
   print(new String.fromCharCodes(input));
 
-  //Symbol
+  //Symbol ->Um objeto Symbol representa um operador ou identificador declarado em um programa Dart. 
   Symbol simb1 = Symbol('input');
   var simb2 = #input;
   print(simb1);
