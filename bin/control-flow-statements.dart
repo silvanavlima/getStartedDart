@@ -75,6 +75,9 @@ void main() {
   }
 
   //assert
+/*   Durante o desenvolvimento, use uma declaração assert - ; - interromper a execução normal 
+se uma condição booleana for falsa. Você pode encontrar exemplos de declarações de afirmação ao longo deste passeio. 
+Aqui estão mais alguns:assert(condition, optionalMessage) */
   assert(''.isEmpty);
   assert(''.isNotEmpty, 'the string is empty');
 }
